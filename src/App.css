@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+
+.App-header {
+  background-color: #369c38;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+/* .App {
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +52,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
