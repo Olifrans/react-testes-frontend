@@ -14,6 +14,8 @@ export const calcularNovoSaldo = (valores, saldo) => {
   }
 }
 
+
+
 function App() {
   const [saldo, atualizarSaldo] = useState(1000);
   const [transacoes, atualizarTransacoes] = useState([]);
@@ -27,6 +29,9 @@ function App() {
     atualizarSaldo(await api.buscaSaldo());
   }
 
+
+
+
   function realizarTransacao(valores) {  
     const novoSaldo = calcularNovoSaldo(valores, saldo);
 
@@ -36,6 +41,8 @@ function App() {
     atualizarSaldo(novoSaldo);
     atualizarTransacoes([valores]);
   }
+
+
 
   useEffect(() => {
     obterSaldo();

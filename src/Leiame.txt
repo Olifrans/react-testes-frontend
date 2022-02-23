@@ -1,0 +1,16 @@
+
+
+ React Testing Library, é uma lib de testes para React,
+
+
+ https://testing-library.com/docs/react-testing-library/intro/
+
+
+
+
+ npm install --save-dev @testing-library/react
+
+
+ comando:
+
+ npm test
