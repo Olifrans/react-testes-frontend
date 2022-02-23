@@ -5,8 +5,6 @@ import { render, screen } from "@testing-library/react";
 
 jest.mock("./api");
 
-
-
 //Testando código assíncrono
 describe("Requisições para API", () => {
   it("Exibir lista de trasações através da API", async () => {

@@ -38,15 +38,22 @@ describe("Componente principal", () => {
       expect(novoSaldo).toBe(100);
     });
 
+
+
     //React Testing Library
     it("que é saque, a transação deve ser realizada", () => {
-      const { getByText, getByTestId, getByLabelText } = render(<App />);
 
-      const saldo = getByText("R$ 1000");
-      const transacao = getByLabelText("Saque");
-      const valor = getByTestId("valor");
+      // const { 
+      //   getByText, 
+      //   getByTestId, 
+      //   getByLabelText 
+      // } = render(<App />);      
+     render(<App />);
 
-      const botaoTransacoa = getByText("Realizar operação");
+      const saldo = screen.getByText("R$ 1000");
+      const transacao = screen.getByLabelText("Saque");
+      const valor = screen.getByTestId("valor");
+      const botaoTransacoa = screen.getByText("Realizar operação");
 
       expect(saldo.textContent).toBe("R$ 1000");
 
