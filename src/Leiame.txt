@@ -14,3 +14,14 @@
  comando:
 
  npm test
+
+
+
+A lista de buscas que você pode fazer é bem extensa e aqui no curso vamos apenas usar algumas. Para conhecer todas as opções, e saber quando melhor utilizar cada uma, você pode conferir a documentação do React Testing Library aqui.
+
+Além disso, a documentação também tem uma espécie de resumo com todas as combinações possíveis. Sempre consulto no meu dia a dia de trabalho e é ótima para descobrir formas criativas de encontrar os elementos para nossos testes.
+
+
+ https://testing-library.com/docs/queries/about/#queries
+
+ https://testing-library.com/docs/react-testing-library/cheatsheet/

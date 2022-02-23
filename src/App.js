@@ -20,11 +20,15 @@ function App() {
   const [saldo, atualizarSaldo] = useState(1000);
   const [transacoes, atualizarTransacoes] = useState([]);
 
+
+
   async function carregarTransacoes() {
     const transacoes = await api.listaTransacoes();
     atualizarTransacoes(transacoes);
   }
 
+
+  
   async function obterSaldo() {
     atualizarSaldo(await api.buscaSaldo());
   }
